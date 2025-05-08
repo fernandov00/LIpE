@@ -1,0 +1,39 @@
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 7rem;
+    z-index: 100;
+}
+
+.menu .logo{
+    margin-left: 10rem;
+    padding: 1rem;
+}
+
+.menu-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.menu-links{
+    display: flex;
+    list-style: none;
+    gap: var(--gap);
+    margin-right: 14rem;
+}
+
+.menu-links li a{
+    color: var(--secondary-color);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.menu-ghost{
+    height: 7rem;
+    width: 100%
+}
