@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <title>LIpE</title>
+</head>
+
+<body class="whitebg"> 
+
+    <header>
+        <input id="close-menu" class="close-menu" type="checkbox" aria-label="close-menu" aria-pressed="true"
+            role="button">
+        <label class="close-menu-label" for="close-menu" title="close-menu"></label>
+        <aside class="menu main-section">
+            <div class="menu-content content">
+                <h1 class=logo onclick="getElementById('close-menu').checked=false;">
+                    <a href="#">
+                        <img src="./assets/img/lipe.png" alt="Imagem logo do lipe" width="50">
+                    </a>
+                </h1>
+                <nav>
+                    <ul class="menu-links" onclick="getElementById('close-menu').checked=false;">
+                        <li><a href="#intro">LIpE</a></li>
+                        <li><a href="#gallery">Galeria</a></li>
+                        <li><a href="#feedbacks">Feedbacks</a></li>
+                        <li><a href="#info">Sobre</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+        </aside>
+        <aside class="menu-mobile main-section">
+            <div class="menu-mobile-content">
+                <a href="#"><h1>LIpE</h1></a>
+               
+            </div>
+        </aside>
+
+    </header>
+
+    <div class="menu-ghost"></div>
+
+    <section id="main" class="main-section gradientbg">
+        <div class="main-content content">
+            <div class="main-text">
+                <h1>LIpE</h1>
+                <p>
+                    Laboratório Inteligente para Educação
+                </p>
+            </div>
+            <div class="main-logo">
+                <img src="./assets/img/lipe.png" alt="Logo LIpE" width="455">
+            </div>
+        </div>
+    </section>
+
+    <section class="intro section" id="intro">
+        <div class="intro-content content">
+            <div class="intro-text">
+                <h2>Quem somos?</h2>
+                <div class="intro-grid">
+                    <p>
+                        O LIpE (Laboratório Inteligente para Educação) é um projeto desenvolvido no Instituto Federal de
+                        Educação, Ciência e Tecnologia - Campus Ibirubá. O objetivo do projeto é entregar conhecimento tecnológico e
+                        plantar a semente do pensamento computacional nas escolas de ensino básico da
+                        região.
+                    </P>
+                    <p>
+                        Até o ano de 2025, o LIpE já alcançou seis escolas diretamente nas cidades de Fortaleza dos Valos, Ibirubá e
+                        Quinze de Novembro, além de auxiliar na capacitação de professores
+                        em relação à BNCC Computação no município de Tapera, buscando contribuir com a ampliação do conhecimento dos professores.
+
+                    </P>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="gallery" class="grid-container container gallery section">
+        <h2>Veja algumas de nossas atividades</h2>
+        <ul class="custom-controls">
+            <li><img src="./assets/img/slide/atividade1-thumb.png" alt="Miniatura-1"></li>
+            <li><img src="./assets/img/slide/atividade2-thumb.png" alt="Miniatura-2"></li>
+            <li><img src="./assets/img/slide/atividade3-thumb.png" alt="Miniatura-3"></li>
+            <li><img src="./assets/img/slide/atividade4-thumb.png" alt="Miniatura-4"></li>
+        </ul>
+        <div class="slide-wrapper">
+            <ul class="slide">
+                <li><img src="./assets/img/slide/atividade1.png" width="400" height="400" alt="Atividades-1"></li>
+                <li><img src="./assets/img/slide/atividade2.png" width="400" height="400" alt="Atividades-2"></li>
+                <li><img src="./assets/img/slide/atividade3.png" width="400" height="400" alt="Atividades-3"></li>
+                <li><img src="./assets/img/slide/atividade4.png" alt="Atividades-4" ></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="section feedbacks" id="feedbacks">
+        <div class="feedbacks-content content">
+            <h2>Feedbacks</h2>
+
+            <div class="feedbacks-grid">
+                <div class="comentario">
+                    <h3>Atividades LIpE 2024</h3>
+                    <p>"Achei muito legal, pois além de ser uma atividade diferente das realizadas no dia-a-dia da escola,
+                        também tivemos a oportunidade de conhecer e aprender sobre as tecnologias da computação e
+                        informação"</p>
+                </div>
+                <div class="comentario">
+                    <h3>Treinamento - Utilização dos Kahoots</h3>
+                    <p>"Parabéns Gabriel pelo excelente treinamento!! Uso muito esta ferramenta como forma de retomada do 
+                        conteúdo e os alunos adoram as aulas, pois aprendem de um jeito dinâmico e divertido!"</p>
+                </div>
+                <div class="grafico">
+                    <img src="assets/img/grafico.png" alt="Grafico">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="info" class="section info gradientbg">
+        <div class="info-content content">
+            <h2>Nossas informações</h2>
+            <div class="info-container whitebg">
+                <div class="info-text">
+                    <div class="info-spacing">
+                        <h3>Nossa localização</h3>
+                        <p>
+                            Rua Nelsi Ribas Fritsch, 1111 - Esperança<br>
+                            Ibirubá - RS<br>
+                        </p>
+                    </div>
+                    <div class="info-spacing">
+                        <h3>Nosso contato</h3>
+                        <p>
+                            <a href="mailto:lipe@ibiruba.ifrs.edu.br">lipe@ibiruba.ifrs.edu.br</a>
+                        </p>
+                    
+                        <div class="redes">
+                            <a href="https://www.instagram.com/lipe.ifrs/?hl=pt-br">
+                                <img src="assets/img/redes/instagram-azul.svg" width="32" height="32" alt="Instagram">
+                            </a>
+                            <a href="https://www.facebook.com/lipe.ifrs">
+                                <img src="./assets/img/redes/facebook-azul.svg" width="32" height="32" alt="Facebook">
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="info-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.3570165360534!2d-53.104971182451614!3d-28.64902696769505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94fd66245cfb79bd%3A0x770479084e211eb!2sR.%20Nelsi%20Ribas%20Fritsch%2C%201111%20-%20Esperan%C3%A7a%2C%20Ibirub%C3%A1%20-%20RS%2C%2098200-000!5e0!3m2!1spt-BR!2sbr!4v1746705263994!5m2!1spt-BR!2sbr"
+                         style="border:0;width:100%; height:100%;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer main-section dark-bluebg">
+        <div class="footer-content content">
+            <div class="footer-contato">
+                <h3>Contato</h3>
+
+                <ul>
+                    
+                    <li>lipe@ibiruba.ifrs.edu.br</li>
+                </ul>
+
+                <ul>
+                    <li>Rua Nelsi Ribas Fritsch, 1111 - Bairro Esperança</li>
+                    <li>Ibirubá - RS</li>
+                </ul>
+                <div class="footer-redes">
+                    <a href="https://www.instagram.com/lipe.ifrs/?hl=pt-br">
+                        <img src="assets/img/redes/instagram.svg" width="32" height="32" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/lipe.ifrs">
+                        <img src="./assets/img/redes/facebook.svg" width="32" height="32" alt="Facebook">
+                    </a>
+
+                </div>
+            </div>
+            <div class="footer-logo">
+                <img src="./assets/img/lipe.png" width="455" alt="Logo do Lipe">
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="./script.js" type="module"></script>
+
+</body>
+
+</html>
+<!---->

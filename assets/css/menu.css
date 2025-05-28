@@ -1,0 +1,141 @@
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 7rem;
+    z-index: 100;
+    background: var(--dark-blue);
+    color: var(--primary-white);
+}
+
+.menu .logo{
+    padding: 1rem;
+}
+
+
+.menu-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+
+.menu-links{
+    display: flex;
+    list-style: none;
+    gap: var(--gap);
+}
+
+.menu-links li a{
+    color: var(--secondary-color);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.menu-ghost{
+    height: 7rem;
+    width: 100%
+}
+.menu-mobile{
+    display:none;
+}
+
+.close-menu{
+    display: none;
+}
+
+
+@media (max-width: 768px){
+    .menu-links{
+        gap: 2rem
+    }
+    .menu-links li a{
+        color: var(--secondary-color);
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 480px){
+    .menu-ghost{
+        display: none;
+    }
+    .menu ul li a{
+        font-size: 2rem;
+    }
+    .menu-mobile{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 7rem;
+        z-index: 101;
+        background: var(--dark-blue);
+        color: var(--primary-white);
+    }
+    .menu-mobile-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    .menu-mobile h1{
+        font-size: 4rem;
+        margin: 0;
+        color: var(--primary-white)
+    }
+    
+
+    .menu{
+        bottom: 0;
+        text-align: center;
+        height: 100%;
+        display:none;
+        background: #0a1a2ef5;
+    }
+    .menu .logo{
+        display: none;
+    }
+    .menu-content, .menu-content ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .menu-content{
+        height: 100vh;
+    }
+
+
+
+    .close-menu-label::after{
+        content: '☰';
+        color: var(--primary-white);
+        font-size: 4rem;
+        text-align: center;
+        cursor: pointer;
+        z-index: 10000;
+        position: fixed;
+        top: 0.65rem;
+        right: 2rem;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .close-menu:checked~.menu{
+        display:block;
+    }  
+   
+    .close-menu:checked~.close-menu-label::after{
+        content: 'x';
+        font-size: 4rem;
+        font-style: bold;
+        top: 0.2rem;
+    }
+    
+}
+
+

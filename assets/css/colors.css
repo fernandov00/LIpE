@@ -1,0 +1,34 @@
+:root{
+    --primary-bg: linear-gradient(135deg,
+     #0a1a2e, #1b2a3e, #243a4e);
+
+    --dark-blue: #0a1a2e;
+    --primary-blue: #1b2a3e;
+    --light-blue: #243a4e;
+    --very-light-blue: #617f9c71;
+
+    --primary-white: #fff;
+    
+    --gap: 3rem;
+}
+
+.light-bluebg{
+    background: var(--light-blue);
+    color: white;
+}
+.bluebg{
+    background: var(--primary-blue);
+    color: white;
+}
+.dark-bluebg{
+    background: var(--dark-blue);
+    color: white;
+}
+.gradientbg{
+    background: var(--primary-bg);
+    color: white;
+}
+.whitebg{
+    background: var(--primary-white);
+    color: var(--primary-blue);
+}
