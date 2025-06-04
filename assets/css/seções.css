@@ -73,6 +73,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+    padding: 2rem 0;
 
 }
 .galeria-container{
@@ -80,11 +81,9 @@
     align-items: center;
     width: 100%;
     height: auto;
-    padding: 1rem;
 }
 .galeria-container img{
     width: 100%;
-    margin: 1rem 0;
     border-radius: 1rem;
     transition: 150ms all ease-in-out
 }
@@ -300,5 +299,8 @@
     .footer-content ul li{
         list-style: none;
         font-size: 1.6rem;
+    }
+    .galeria-principal-grid{
+        gap: 1rem;
     }
 }
