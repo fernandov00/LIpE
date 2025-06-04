@@ -60,9 +60,7 @@
 }
 
 @media (max-width: 480px){
-    .menu-ghost{
-        display: none;
-    }
+
     .menu ul li a{
         font-size: 2rem;
     }
