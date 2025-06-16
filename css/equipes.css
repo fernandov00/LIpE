@@ -1,0 +1,39 @@
+.equipe-grid{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    margin-top: 3rem;
+    row-gap: 8rem;
+}
+
+.equipe-img{
+    display: flex;
+    align-items: right;
+    flex-flow: column wrap;
+    width: 100%;
+    height: auto;
+    padding-left: 4rem;
+}
+
+.equipe-img img{
+    max-height: 30rem;
+    height: auto;
+    width: auto;
+}
+
+.equipe-text{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.equipe-text h2{
+    text-align: inherit;
+}
+
+.equipe-text p{
+    font-size: 2.2rem;
+    font-weight: 500;
+}

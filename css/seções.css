@@ -42,6 +42,7 @@
     width: 100%;
     min-width: 22.25rem;
     max-width: 37.5rem;
+
 }
 
 .main-text p{
@@ -108,26 +109,36 @@
     border-radius: 1rem;
     gap: var(--gap);
     width: 100%;
-    font-style: italic;
     font-weight: 400;
 }
-.comentario h3{
+.grafico{
+    display:flex;
+    flex-flow: column wrap;
+    padding: 2rem;
+    text-align: left;
+    font-size: 1.6rem;
+    background: var(--very-light-blue);
+    border-radius: 1rem;
+    width: 100%;
+    font-weight: 400;   
+    justify-content: space-between;
+}
+
+.comentario p{
+    font-style: italic;
+}
+.comentario h3, .grafico h3{
     margin-bottom: 1rem;
 }
 
-.grafico{
-    display: flex;
-    grid-column: span 2;
-    justify-content: center;
-}
+
 .grafico img{
     max-height: 40rem;
     height: auto;
     width: 100%;
-    max-width: 57.5rem;
-    background: var(--very-light-blue);
-    padding: 1rem;
     border-radius: 1rem;
+    margin-top: 2rem;
+    bottom: 0;
 }
 .info-content{
     display:flex;
@@ -141,7 +152,7 @@
     padding: 5rem;
     border-radius: 0.8rem;
     width: 100%;
-    gap: var(--gap)
+    gap: var(--gap);
 
 }
 .info-spacing{
@@ -217,9 +228,15 @@
         font-weight: 400;   
     }
 }
+@media(max-width: 1000px){
+    
+}
 @media(max-width: 860px){
     .galeria-principal-grid{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .grafico{
+        grid-column: span 2;
     }
 }
 @media (max-width: 768px){
