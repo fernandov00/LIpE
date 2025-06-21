@@ -93,7 +93,7 @@
 }
 .edimar img{
     max-width: 40rem;
-    width: auto;
+    width: 100%;
     border-radius: 1rem;
 }
 .edimar p{
